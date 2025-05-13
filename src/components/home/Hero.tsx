@@ -11,7 +11,7 @@ export default function Hero() {
           backgroundImage: 'url("https://cdn.prod.website-files.com/664cfafd1b780dd90b9bc416/664cfafd1b780dd90b9bcd8a_hero-bg.png")',
         }}
       />
-      <div className="" />
+      <div className="absolute inset-0 bg-blue-800 opacity-40" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full">
