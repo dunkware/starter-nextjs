@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUNKWARE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6a11cb',
+            secondary: '#2575fc',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient-to-br from-purple-800 to-blue-600">
+    <header class="fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-10">
+      <div class="text-white text-2xl font-bold">DUNKWARE</div>
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:underline">Platform</a>
+        <span class="text-white">|</span>
+        <a href="#" class="text-white hover:underline">Solutions</a>
+        <span class="text-white">|</span>
+        <a href="#" class="text-white hover:underline">About</a>
+      </nav>
+    </header>
+    <main class="flex items-center justify-center min-h-screen">
+      <h1 class="text-white text-7xl font-bold tracking-wider">DUNKWARE</h1>
+    </main>
+  </div>
+</body>
+</html>
