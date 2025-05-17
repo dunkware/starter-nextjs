@@ -8,7 +8,15 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+	container: {
+      center: true,
+      padding: '20px',
+      screens: {
+        DEFAULT: '1200px',
+      },
+    },
   	extend: {
+	  
   		colors: {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',

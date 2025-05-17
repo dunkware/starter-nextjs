@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
+import { div } from "framer-motion/client"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,11 +20,12 @@ export default function Navbar() {
   ]
 
   return (
-    <motion.div
+  <div className=" bg-[#0F172A] border-b-2 border-gray-800">
+      <motion.div
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-blue-800 text-white py-4 px-4 md:px-12 flex items-center justify-between sticky top-0 z-50"
+      className="container text-white py-4 px-4 md:px-12 flex items-center justify-between sticky top-0 z-50 "
     >
       {/* Logo */}
       <motion.div whileHover={{ scale: 1.05 }} className="text-orange-500 text-2xl md:text-3xl font-bold">
@@ -40,9 +42,7 @@ export default function Navbar() {
               </Link>
             </motion.div>
           ))}
-        </nav>
-      </div>
-
+          
       {/* Early Access Button - Desktop */}
       <div className="hidden md:block">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -53,6 +53,9 @@ export default function Navbar() {
           </Link>
         </motion.div>
       </div>
+        </nav>
+      </div>
+
 
       {/* Mobile Navigation */}
       <div className="md:hidden">
@@ -90,11 +93,10 @@ export default function Navbar() {
                         {item.label}
                       </Link>
                     </motion.div>
-                  ))}
-                </AnimatePresence>
-              </nav>
 
-              <motion.div
+                  ))}
+
+                   <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.3 }}
@@ -106,10 +108,15 @@ export default function Navbar() {
                   </Button>
                 </Link>
               </motion.div>
+                </AnimatePresence>
+              </nav>
+
+             
             </div>
           </SheetContent>
         </Sheet>
       </div>
     </motion.div>
+  </div>
   )
 }
