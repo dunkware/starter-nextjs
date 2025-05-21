@@ -25,7 +25,7 @@ export default function Hero() {
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl">
               
-              Time is constant — optimize it. Dunkware AI <br></br> works for you so you can on what matters most.
+              Time is constant — optimize it. Dunkware AI <br></br> works for you so you can do what matters most.
               
               
           

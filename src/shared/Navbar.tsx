@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       {/* Logo */}
       <motion.div whileHover={{ scale: 1.05 }} className="text-orange-500 text-2xl md:text-3xl font-bold">
-        DUNKWARE
+        DUNKWARE AI
       </motion.div>
 
       {/* Desktop Navigation */}
@@ -52,6 +52,14 @@ export default function Navbar() {
             </motion.div>
           ))}
         </nav>
+        <Link href="/login">
+          <motion.button 
+            whileHover={{ scale: 1.05 }} 
+            className="ml-8 px-6 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 transition-all"
+          >
+            Login
+          </motion.button>
+        </Link>
       </div>
 
 
@@ -98,7 +106,21 @@ export default function Navbar() {
                       )}
                     </motion.div>
                   ))}
-
+                  
+                  <motion.div
+                    initial={{ x: -30, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -30, opacity: 0 }}
+                    transition={{ delay: navItems.length * 0.1, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/login"
+                      className="text-xl text-orange-500 hover:text-orange-400 transition-colors block py-2"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Login
+                    </Link>
+                  </motion.div>
                 </AnimatePresence>
               </nav>
 

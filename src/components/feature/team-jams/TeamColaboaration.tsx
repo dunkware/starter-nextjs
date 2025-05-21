@@ -11,7 +11,7 @@ export default function TeamColaboaration() {
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Bring Your Team Together</h2>
               <p className="text-gray-600 mb-8">
-                Team Jams works best when everyone contributes. The diversity of 
+                AI Jams works best when everyone contributes. The diversity of 
                 perspectives leads to better outcomes, and our AI ensures no idea gets lost.
               </p>
               <div className="space-y-4">

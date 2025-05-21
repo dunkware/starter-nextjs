@@ -53,7 +53,7 @@ export default function TeamJamsWorks() {
         <div className="absolute -left-44 top-0 lg:block hidden"></div>
 
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">How Team Jams Works</h2>
+          <h2 className="text-3xl font-bold mb-4">How AI Jams Works</h2>
           
         </div>
 

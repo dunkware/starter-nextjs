@@ -4,11 +4,12 @@ import {  ArrowRight } from 'lucide-react'
 export default function TeamJamsBanner() {
   return (
     <div>
-         <section className="relative lg:py-44 py-16 overflow-hidden min-h-screen">
+         <section className="relative lg:py-44 py-16 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("https://cdn.prod.website-files.com/664cfafd1b780dd90b9bc416/664cfafd1b780dd90b9bcd8a_hero-bg.png")',
+            backgroundSize: '100% auto',
           }}
         />
         <div className="absolute inset-0 bg-[#0F172A] opacity-40" />
@@ -17,8 +18,8 @@ export default function TeamJamsBanner() {
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Team Jams
-                <span className="block text-2xl md:text-3xl mt-2 text-purple-300">
-                  Skip meetings. Create magic.
+                <span className="block text-2xl md:text-2xl mt-2 text-orange-400">
+                  Why meet when you can jam
                 </span>
               </h1>
               <p className="text-lg text-white/80 mb-8">
