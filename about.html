@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunkware - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            blue: {
+              100: '#dbeafe',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+            },
+            purple: {
+              400: '#c084fc',
+              500: '#a855f7',
+              600: '#9333ea',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      background-color: #0F172A;
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    .animate-slide-up {
+      animation: slideUp 0.5s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="relative z-20 flex justify-between items-center p-6 bg-[#0F172A] border-b-2 border-gray-800">
+    <a href="index.html" class="text-orange-500 text-2xl font-bold hover:text-orange-400 transition-colors">DUNKWARE</a>
+    <nav class="flex items-center space-x-4">
+      <a href="#" class="text-white hover:underline">Platform</a>
+      <span class="text-white">|</span>
+      <a href="#" class="text-white hover:underline">Features</a>
+      <span class="text-white">|</span>
+      <a href="pricing.html" class="text-white hover:underline">Pricing</a>
+      <span class="text-white">|</span>
+      <a href="about.html" class="text-white hover:underline">About</a>
+      <a href="login.html" class="ml-4 px-6 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 transition-all">Login</a>
+    </nav>
+  </header>
+
+  <!-- About Manifesto Section -->
+  <section class="relative py-24 overflow-hidden bg-[#0F172A]">
+    <!-- Background elements -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+      <div class="absolute top-[10%] left-[5%] w-64 h-64 rounded-full bg-orange-500 blur-[100px]"></div>
+      <div class="absolute top-[40%] right-[10%] w-80 h-80 rounded-full bg-purple-600 blur-[120px]"></div>
+      <div class="absolute bottom-[20%] left-[30%] w-96 h-96 rounded-full bg-blue-600 blur-[150px]"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <!-- Hero manifesto section -->
+      <div class="max-w-4xl mx-auto mb-24">
+        <div class="animate-fade-in bg-gradient-to-br from-orange-500/10 to-purple-500/10 backdrop-blur-sm border border-orange-500/20 rounded-xl p-3">
+          <div class="bg-[#1E293B]/70 rounded-lg border border-white/5 px-8 py-10 md:p-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-orange-500 mb-8 flex items-center gap-3">
+              <span>Enough Bullshit</span>
+              <span class="inline-block ml-2 rotate-0 md:rotate-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </span>
+            </h2>
+            
+            <div class="space-y-8 text-xl text-white/90">
+              <p class="leading-relaxed">
+                Technology was supposed to make us faster, smarter, freer. Instead, it buried us in tabs, tools, and to-do lists. We've been promised productivity, but what we got was overhead—chasing approvals, switching contexts, scheduling calls, formatting ideas to fit software that was never built to understand them.
+              </p>
+              
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 py-3">
+                <div class="text-3xl md:text-4xl font-bold text-white">Dunkware</div>
+                <div class="h-px w-full md:w-px md:h-10 bg-gradient-to-r md:bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
+                <div class="flex-1 italic text-white/80">is built on a different principle: that good technology should disappear.</div>
+              </div>
+              
+              <p class="leading-relaxed">
+                It should minimize its presence, reduce friction, and amplify what matters—your time, your ideas, your work.
+              </p>
+              
+              <p class="leading-relaxed">
+                We envision a future where AI doesn't just assist you—it represents you. Agents, shaped by you, handle communication, coordination, and execution across people, teams, and institutions. No more waiting, translating, or jumping through hoops. Just intent, met with action.
+              </p>
+              
+              <div class="flex items-center gap-3">
+                <div class="h-px flex-1 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+                <div class="text-sm text-orange-400 tracking-wider uppercase font-medium">Our mission</div>
+                <div class="h-px flex-1 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+              </div>
+              
+              <div class="text-center py-2">
+                <p class="text-2xl md:text-3xl font-semibold text-white">
+                  We're not here to add another app to your stack.
+                </p>
+                <p class="text-2xl md:text-3xl font-bold text-orange-400 mt-2">
+                  We're here to remove the stack.
+                </p>
+              </div>
+              
+              <div class="pt-4 text-right">
+                <p class="text-white/90">
+                  — <span class="font-bold">Duncan Krebs</span>
+                </p>
+                <p class="text-white/60 text-sm">Creator of Dunkware</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual representations -->
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+        <div class="animate-slide-up bg-[#1E293B]/50 backdrop-blur-sm border border-white/10 rounded-xl p-6 flex flex-col" style="animation-delay: 0.2s;">
+          <div class="bg-red-500/20 rounded-lg p-3 w-fit mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400">
+              <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path>
+              <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
+              <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Technology Today</h3>
+          <div class="flex-1">
+            <p class="text-white/70 mb-4">An ever-growing stack of apps, tools, and platforms that require constant attention and management.</p>
+          </div>
+          <div class="mt-6 bg-[#0F172A]/60 rounded-lg p-4">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-red-500"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-red-500"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-red-500"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-white/20"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-white/20"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-white/20"></div>
+                <div class="h-px flex-1 bg-white/10"></div>
+                <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="animate-slide-up bg-[#1E293B]/50 backdrop-blur-sm border border-white/10 rounded-xl p-6 flex flex-col" style="animation-delay: 0.4s;">
+          <div class="bg-orange-500/20 rounded-lg p-3 w-fit mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">The Cost</h3>
+          <div class="flex-1">
+            <p class="text-white/70 mb-4">Your time and creative energy are drained by overhead, context-switching, and forcing ideas to fit rigid structures.</p>
+          </div>
+          <div class="mt-6 bg-[#0F172A]/60 rounded-lg p-4">
+            <div class="grid grid-cols-3 gap-3">
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-white/10"></div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-orange-500/20 border border-orange-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="aspect-square rounded-md flex items-center justify-center bg-orange-500/20 border border-orange-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="animate-slide-up bg-[#1E293B]/50 backdrop-blur-sm border border-white/10 rounded-xl p-6 flex flex-col" style="animation-delay: 0.6s;">
+          <div class="bg-purple-500/20 rounded-lg p-3 w-fit mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Dunkware's Vision</h3>
+          <div class="flex-1">
+            <p class="text-white/70 mb-4">Technology that disappears, AI that represents you, and work that flows naturally from intent to action.</p>
+          </div>
+          <div class="mt-6 bg-[#0F172A]/60 rounded-lg p-4">
+            <div class="space-y-4">
+              <div class="h-1 w-full bg-gradient-to-r from-orange-500 via-purple-500 to-blue-500 rounded-full"></div>
+              <div class="flex items-center gap-3">
+                <div class="px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30 text-white/80 text-xs">Intent</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/40">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+                <div class="px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-white/80 text-xs">Action</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CTA -->
+      <div class="mt-16 text-center">
+        <button class="animate-slide-up px-8 py-4 bg-gradient-to-r from-orange-500 to-purple-600 text-white rounded-lg font-medium hover:from-orange-600 hover:to-purple-700 transition-all flex items-center gap-2 mx-auto" style="animation-delay: 0.8s;">
+          Join Our Vision 
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

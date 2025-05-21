@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { div } from "framer-motion/client"
 import FeaturesDropdown from "../components/ui/FeaturesDropdown"
+import PlatformDropdown from "../components/ui/PlatformDropdown"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,11 +17,11 @@ export default function Navbar() {
   const navItems = [
         { href: "/", label: "Home" },
 
-    { href: "#platform", label: "Platform" },
+    { href: "/platform", label: "Platform" },
     { href: "features", label: "Features" },
     { href: "#use-cases", label: "Use Cases" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#about", label: "About" },
+    { href: "/pricing", label: "Pricing" },
+    { href: "/about", label: "About" },
     { href: "#contact", label: "Contact" },
   ]
 
@@ -44,6 +45,8 @@ export default function Navbar() {
             <motion.div key={item.href} whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
               {item.label === "Features" ? (
                 <FeaturesDropdown />
+              ) : item.label === "Platform" ? (
+                <PlatformDropdown />
               ) : (
                 <Link href={item.href} className="hover:text-gray-200 transition-colors">
                   {item.label}
@@ -94,6 +97,10 @@ export default function Navbar() {
                       {item.label === "Features" ? (
                         <div className="py-2">
                           <FeaturesDropdown />
+                        </div>
+                      ) : item.label === "Platform" ? (
+                        <div className="py-2">
+                          <PlatformDropdown />
                         </div>
                       ) : (
                         <Link

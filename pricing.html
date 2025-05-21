@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunkware - Pricing Plans</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            blue: {
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#172554',
+            },
+            green: {
+              500: '#22c55e',
+              600: '#16a34a',
+            },
+            yellow: {
+              500: '#eab308',
+              600: '#ca8a04',
+            },
+            red: {
+              500: '#ef4444',
+              600: '#dc2626',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      background-color: #0F172A;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <header class="relative z-20 flex justify-between items-center p-6 bg-[#0F172A] border-b-2 border-gray-800">
+      <a href="index.html" class="text-orange-500 text-2xl font-bold hover:text-orange-400 transition-colors">DUNKWARE</a>
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:underline">Platform</a>
+        <span class="text-white">|</span>
+        <a href="#" class="text-white hover:underline">Solutions</a>
+        <span class="text-white">|</span>
+        <a href="about.html" class="text-white hover:underline">About</a>
+        <a href="login.html" class="ml-4 px-6 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 transition-all">Login</a>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="pt-20 pb-10 bg-gradient-to-b from-blue-950 to-blue-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold text-white mb-6">Pricing Plans</h1>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            Choose the plan that best fits your needs. All plans include our core AI features with different levels of capacity and support.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pricing Section -->
+    <div class="relative w-full bg-blue-900 py-24 px-6">
+      <!-- Background gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-800/40 to-blue-900/90"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 container mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span class="text-orange-400">Transparent</span> Pricing for Every Team
+          </h2>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            We believe in providing fair, scalable pricing that grows with your needs. 
+            Our philosophy is simple: you should only pay for what you use, with predictable costs as you scale.
+          </p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <!-- Free Tier -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="bg-black/20 backdrop-blur-sm p-6 h-full flex flex-col">
+              <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">🟩</span>
+                <h3 class="text-2xl font-bold text-white">Free</h3>
+              </div>
+              
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-white">$0</span>
+                <span class="text-blue-200">/user/month</span>
+              </div>
+              
+              <p class="text-blue-100 mb-6">For individuals getting started with generative work</p>
+              
+              <div class="border-t border-white/10 pt-6 mb-6">
+                <h4 class="text-sm uppercase text-blue-200 mb-4">Features</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Generative Docs & Planning</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Up to 3 users</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">1M AI tokens/month</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Basic support (Email, 48-hour response time)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Great for small teams & side projects</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <a href="#" class="w-full block text-center py-3 px-6 rounded-md font-medium transition-colors bg-green-500 hover:bg-green-600 text-white">
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pro Tier -->
+          <div class="rounded-xl overflow-hidden border-2 border-orange-500 transform md:-translate-y-4">
+            <div class="bg-blue-800/40 backdrop-blur-sm p-6 h-full flex flex-col">
+              <div class="bg-orange-500 text-white text-xs font-bold uppercase py-1 px-3 rounded-full self-start mb-4">
+                Most Popular
+              </div>
+              
+              <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">🟦</span>
+                <h3 class="text-2xl font-bold text-white">Pro</h3>
+              </div>
+              
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-white">$29</span>
+                <span class="text-blue-200">/user/month</span>
+                <div class="text-sm text-blue-300 mt-1">
+                  $39/user/month (billed monthly)
+                </div>
+              </div>
+              
+              <p class="text-blue-100 mb-6">For power users who rely on AI every day</p>
+              
+              <div class="border-t border-white/10 pt-6 mb-6">
+                <h4 class="text-sm uppercase text-blue-200 mb-4">Features</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Everything in Free</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">10M AI tokens/month</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Unlimited projects</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Priority support (Email + Chat, 24-hour response time)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Advanced document generation templates</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Version history (30 days)</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <a href="#" class="w-full block text-center py-3 px-6 rounded-md font-medium transition-colors bg-orange-500 hover:bg-orange-600 text-white">
+                  Start Free Trial
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Starter Tier -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="bg-black/20 backdrop-blur-sm p-6 h-full flex flex-col">
+              <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">🟧</span>
+                <h3 class="text-2xl font-bold text-white">Business Starter</h3>
+              </div>
+              
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-white">$49</span>
+                <span class="text-blue-200">/user/month</span>
+                <div class="text-sm text-blue-300 mt-1">
+                  $69/user/month (billed monthly)
+                </div>
+                <div class="text-sm text-blue-300 mt-1">
+                  Minimum 5 users
+                </div>
+              </div>
+              
+              <p class="text-blue-100 mb-6">For growing teams who need more control and trust</p>
+              
+              <div class="border-t border-white/10 pt-6 mb-6">
+                <h4 class="text-sm uppercase text-blue-200 mb-4">Features</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Dedicated business workspace (isolated from public runtime)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Admin tools + Team permissions</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Scalable AI infrastructure (25M tokens/month)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">SSO integration</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Audit logs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Workspace analytics</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <a href="#" class="w-full block text-center py-3 px-6 rounded-md font-medium transition-colors bg-orange-500 hover:bg-orange-600 text-white">
+                  Start Free Trial
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Elite Tier -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="bg-black/20 backdrop-blur-sm p-6 h-full flex flex-col">
+              <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">🟨</span>
+                <h3 class="text-2xl font-bold text-white">Business Elite</h3>
+              </div>
+              
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-white">$99</span>
+                <span class="text-blue-200">/user/month</span>
+                <div class="text-sm text-blue-300 mt-1">
+                  $129/user/month (billed monthly)
+                </div>
+                <div class="text-sm text-blue-300 mt-1">
+                  Minimum 10 users
+                </div>
+              </div>
+              
+              <p class="text-blue-100 mb-6">For companies needing full control, privacy, and performance</p>
+              
+              <div class="border-t border-white/10 pt-6 mb-6">
+                <h4 class="text-sm uppercase text-blue-200 mb-4">Features</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Hosted in your private tenant (or optionally in your cloud)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Custom AI runtime and compute limits (100M tokens/month)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Advanced compliance options</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Custom data retention policies</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Priority SLAs (99.9% uptime guarantee)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-yellow-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Dedicated onboarding specialist</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <a href="#" class="w-full block text-center py-3 px-6 rounded-md font-medium transition-colors bg-yellow-500 hover:bg-yellow-600 text-white">
+                  Contact Sales
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="bg-black/20 backdrop-blur-sm p-6 h-full flex flex-col">
+              <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">🟥</span>
+                <h3 class="text-2xl font-bold text-white">Enterprise</h3>
+              </div>
+              
+              <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Contact us for pricing</span>
+              </div>
+              
+              <p class="text-blue-100 mb-6">For mission-critical AI across the organization</p>
+              
+              <div class="border-t border-white/10 pt-6 mb-6">
+                <h4 class="text-sm uppercase text-blue-200 mb-4">Features</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Fully managed, highly scalable infrastructure</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Custom integrations & security reviews</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Dedicated success manager & solutions engineering</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Advanced AI model customization</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Enterprise-grade SLAs (99.99% uptime guarantee)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Unlimited tokens with fair use policy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-red-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-white">Custom security controls</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <a href="#" class="w-full block text-center py-3 px-6 rounded-md font-medium transition-colors bg-red-500 hover:bg-red-600 text-white">
+                  Contact Sales
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yearly Discount -->
+        <div class="mt-12 text-center bg-blue-800/30 rounded-xl p-6 max-w-2xl mx-auto">
+          <h3 class="text-xl font-bold text-white mb-2">Yearly Discount</h3>
+          <p class="text-blue-100">
+            Save 20% when billed annually on all paid plans.
+          </p>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="mt-16">
+          <h3 class="text-2xl font-bold text-white text-center mb-8">Additional Services</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-white mb-2">AI Model Fine-tuning</h4>
+              <p class="text-blue-200">Starting at $5,000</p>
+            </div>
+            <div class="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-white mb-2">Custom Integration Development</h4>
+              <p class="text-blue-200">Starting at $2,500</p>
+            </div>
+            <div class="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-white mb-2">Advanced Training</h4>
+              <p class="text-blue-200">$1,500/session</p>
+            </div>
+            <div class="bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-white mb-2">Implementation Services</h4>
+              <p class="text-blue-200">Custom quote based on requirements</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-16 text-center">
+          <p class="text-blue-200 mb-6">
+            Need a custom solution for your specific requirements?
+          </p>
+          <a href="#custom" class="inline-flex items-center text-orange-400 hover:text-orange-300 font-medium">
+            Let's talk about your specific needs
+            <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Philosophy Section -->
+    <div class="py-20 bg-blue-950">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-blue-900/50 rounded-xl p-8 border border-blue-700">
+          <h2 class="text-3xl font-bold text-white mb-6">Our Pricing Philosophy</h2>
+          <div class="space-y-6 text-blue-100">
+            <p>
+              We believe AI tools should be accessible to everyone, from individual creators to enterprise organizations. 
+              Our pricing is designed to scale with your usage, ensuring you only pay for what you need.
+            </p>
+            <p>
+              As your team grows and your AI needs expand, our plans provide the flexibility to scale up without unexpected costs. 
+              We're committed to transparent pricing with no hidden fees.
+            </p>
+            <p>
+              All plans include our core AI capabilities, with higher tiers offering increased capacity, 
+              enhanced security features, and more personalized support to meet the needs of larger organizations.
+            </p>
+            <p>
+              Not sure which plan is right for you? Start with our Free tier to explore our platform, 
+              or contact our sales team for a personalized consultation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="py-20 bg-gradient-to-b from-blue-950 to-blue-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+          
+          <div class="space-y-8 text-left">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">What are AI tokens?</h3>
+              <p class="text-blue-100">
+                AI tokens are the units of measurement for AI processing. They represent the computational resources used 
+                when generating content, analyzing documents, or performing other AI tasks. Different operations consume 
+                different amounts of tokens based on their complexity.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Can I upgrade or downgrade my plan?</h3>
+              <p class="text-blue-100">
+                Yes, you can change your plan at any time. When upgrading, the new features and capacity will be available immediately. 
+                When downgrading, changes will take effect at the start of your next billing cycle.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">What happens if I exceed my monthly token limit?</h3>
+              <p class="text-blue-100">
+                If you approach your monthly token limit, you'll receive notifications. If you exceed your limit, 
+                you can purchase additional tokens or upgrade to a higher tier plan with more capacity.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Do unused tokens roll over to the next month?</h3>
+              <p class="text-blue-100">
+                No, unused tokens do not roll over. Your token allocation refreshes at the beginning of each billing cycle.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Is there a free trial for paid plans?</h3>
+              <p class="text-blue-100">
+                Yes, we offer a 14-day free trial for our Pro and Business Starter plans. No credit card is required to start your trial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-[#0F172A] text-white py-12 border-t border-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-8 md:mb-0">
+            <a href="index.html" class="text-orange-500 text-2xl font-bold hover:text-orange-400 transition-colors">DUNKWARE</a>
+            <p class="mt-4 text-blue-200 max-w-md">
+              Building the future of AI-powered web experiences for teams and organizations of all sizes.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Platform</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Features</a></li>
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Solutions</a></li>
+                <li><a href="pricing.html" class="text-blue-300 hover:text-white transition-colors">Pricing</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Company</h3>
+              <ul class="space-y-2">
+                <li><a href="about.html" class="text-blue-300 hover:text-white transition-colors">About</a></li>
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Careers</a></li>
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Resources</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Documentation</a></li>
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#" class="text-blue-300 hover:text-white transition-colors">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-blue-300 text-sm">© 2025 Dunkware AI. All rights reserved.</p>
+          <div class="mt-4 md:mt-0 flex space-x-4">
+            <a href="#" class="text-blue-300 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="text-blue-300 hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
