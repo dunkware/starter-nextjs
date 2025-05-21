@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            blue: {
+              100: '#dbeafe',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              900: '#1e3a8a',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      background-color: #0F172A;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="relative min-h-screen w-full overflow-hidden flex flex-col">
+    <!-- Navbar -->
+    <header class="relative z-20 flex justify-between items-center p-6 border-b-2 border-gray-800">
+      <a href="#" class="text-orange-500 text-2xl font-bold hover:text-orange-400 transition-colors">DUNKWARE</a>
+      <nav class="flex items-center space-x-8">
+        <a href="#" class="text-white hover:text-gray-200 transition-colors">Platform</a>
+        
+        <!-- Features Dropdown -->
+        <div class="relative group">
+          <div class="flex items-center gap-1 cursor-pointer text-white hover:text-gray-200 transition-colors">
+            Features
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:hidden">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden group-hover:block">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </div>
+          
+          <!-- Dropdown Content -->
+          <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-[#0F172A] border border-blue-500 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div class="py-2">
+              <!-- AI Captures -->
+              <a href="#" class="block px-4 py-3 hover:bg-blue-900 transition-colors">
+                <div class="flex items-start gap-3">
+                  <div class="text-blue-400 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"></path>
+                      <path d="M16 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-white">AI Captures</div>
+                    <div class="text-sm text-gray-300">Let AI Capture things and Generate new things</div>
+                  </div>
+                </div>
+              </a>
+              
+              <!-- Team Jams -->
+              <a href="#" class="block px-4 py-3 hover:bg-blue-900 transition-colors">
+                <div class="flex items-start gap-3">
+                  <div class="text-blue-400 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-medium text-white">Team Jams</div>
+                    <div class="text-sm text-gray-300">Rapid fire knowledge collection</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#" class="text-white hover:text-gray-200 transition-colors">Use Cases</a>
+        <a href="#" class="text-white hover:text-gray-200 transition-colors">Pricing</a>
+        <a href="#" class="text-white hover:text-gray-200 transition-colors">About</a>
+        <a href="#" class="text-white hover:text-gray-200 transition-colors">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mx-auto p-8 text-center">
+      <h1 class="text-4xl font-bold mb-4">Dropdown Menu Demo</h1>
+      <p class="text-xl text-blue-100">Hover over the "Features" menu item in the navigation bar to see the dropdown.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-     <div className="">
+     <div className="flex flex-col min-h-screen">
           <Navbar/>
 
   
-      <main className="">
+      <main className="flex-grow">
            <div>{children}</div>
       </main>
       <Footer/>

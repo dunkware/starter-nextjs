@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-   <div>
-    <Hero/>
-   </div>
+    <div className="h-full opacity-2">
+      <Hero/>
+    </div>
   )
 }

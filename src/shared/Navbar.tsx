@@ -8,13 +8,16 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { div } from "framer-motion/client"
+import FeaturesDropdown from "../components/ui/FeaturesDropdown"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
+    { href: "#platform", label: "Platform" },
     { href: "features", label: "Features" },
-    { href: "#explore", label: "Explore" },
+    { href: "#use-cases", label: "Use Cases" },
+    { href: "#pricing", label: "Pricing" },
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
   ]
@@ -33,26 +36,19 @@ export default function Navbar() {
       </motion.div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-8">
-        <nav className="flex gap-8">
+      <div className="hidden md:flex items-center">
+        <nav className="flex gap-8 ml-auto">
           {navItems.map((item) => (
             <motion.div key={item.href} whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Link href={item.href} className="hover:text-gray-200 transition-colors">
-                {item.label}
-              </Link>
+              {item.label === "Features" ? (
+                <FeaturesDropdown />
+              ) : (
+                <Link href={item.href} className="hover:text-gray-200 transition-colors">
+                  {item.label}
+                </Link>
+              )}
             </motion.div>
           ))}
-          
-      {/* Early Access Button - Desktop */}
-      <div className="hidden md:block">
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link href="#early-access">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md transition-colors">
-              Early Access
-            </Button>
-          </Link>
-        </motion.div>
-      </div>
         </nav>
       </div>
 
@@ -85,29 +81,22 @@ export default function Navbar() {
                       exit={{ x: -30, opacity: 0 }}
                       transition={{ delay: index * 0.1, duration: 0.3 }}
                     >
-                      <Link
-                        href={item.href}
-                        className="text-xl hover:text-orange-500 transition-colors block py-2"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
+                      {item.label === "Features" ? (
+                        <div className="py-2">
+                          <FeaturesDropdown />
+                        </div>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className="text-xl hover:text-orange-500 transition-colors block py-2"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      )}
                     </motion.div>
-
                   ))}
 
-                   <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.3 }}
-                className="mt-8 mb-4"
-              >
-                <Link href="#early-access" onClick={() => setIsOpen(false)}>
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full py-6 rounded-md transition-colors">
-                    Early Access
-                  </Button>
-                </Link>
-              </motion.div>
                 </AnimatePresence>
               </nav>
 

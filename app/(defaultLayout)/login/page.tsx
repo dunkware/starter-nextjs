@@ -16,7 +16,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+    <div className="relative min-h-[calc(100vh-80px)] w-full overflow-hidden flex flex-col items-center justify-center py-16">
       {/* Background image with blue overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
