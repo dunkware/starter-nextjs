@@ -14,6 +14,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
+        { href: "/", label: "Home" },
+
     { href: "#platform", label: "Platform" },
     { href: "features", label: "Features" },
     { href: "#use-cases", label: "Use Cases" },

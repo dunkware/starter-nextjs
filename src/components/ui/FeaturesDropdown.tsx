@@ -9,7 +9,7 @@ export default function FeaturesDropdown() {
       icon: <Brain className="h-5 w-5" />,
       title: "AI Captures",
       description: "Let AI Capture things and Generate new things",
-      href: "/features/ai-captures"
+      href: "/features"
     },
     {
       icon: <Users className="h-5 w-5" />,
